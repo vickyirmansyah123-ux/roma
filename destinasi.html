@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roma – Destinasi</title>
+    <link rel="stylesheet" href="destinasi.css">
+    <link rel="icon" href="gambar/Colosseumremovebg-preview.png">
+</head>
+
+
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <ul class="nav-left">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a class="active" href="destinasi.html">Destinasi</a></li>
+        <li><a href="jelajahi-map.html">Jelajahi Map</a></li>
+    </ul>
+
+    <h1 class="logo-title">ROMA</h1>
+
+    <!-- HAMBURGER (WAJIB ADA) -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-right">
+        <li><a href="budaya.html">Budaya</a></li>
+        <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        <li><a href="sisi-roma.html">Sisi Roma</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="hero-destinations">
+    <div class="hero-overlay"></div>
+    <h1 class="hero-title">Destinasi Ikonik Roma</h1>
+</section>
+
+<!-- GRID DESTINASI -->
+<main>
+    <section class="destination-section">
+        <h2 class="section-title">Temukan Harta Karun Kota Abadi</h2>
+
+        <div class="destination-grid">
+
+            <div class="card">
+                <img src="gambar/pexels-griffinw-2676642.jpg">
+                <h3>Colosseum</h3>
+                <a href="colosseum.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/6815ae295da94f5cb1acf3c8d72e8cf5.jpg">
+                <h3>Vatikan</h3>
+                <a href="kota-ubud.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/pexels-axp-photography-500641970-33008947.jpg">
+                <h3>Pantheon</h3>
+                <a href="pantheon.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/pexels-maggie-ramirez-3227463-17906165.jpg">
+                <h3>Fontana di Trevi</h3>
+                <a href="fontana.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/16b244b8b430188b36d05acd859989d6.jpg">
+                <h3>Sant'Angelo</h3>
+                <a href="desa.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/740ed7e2be33798494789932fdbfc65c.jpg">
+                <h3>Spanish Steps</h3>
+                <a href="spanish-step.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/photo-1643759435882-29d5f3674c54.avif">
+                <h3>Foro Romano</h3>
+                <a href="foro-romano.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/photo-1662398885856-cf2ab6e981b2.avif">
+                <h3>Piazza Navona</h3>
+                <a href="piazza-navona.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/e9c08f621f5ec3d8418fd7777a8d3219.jpg">
+                <h3>Campo de Fiori</h3>
+                <a href="campo.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/32d837383460a9311a26a8a1ff017770.jpg">
+                <h3>Trastevere</h3>
+                <a href="trastevere.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/7a594e19b8a1c3b6ef0d47478b20a0b1.jpg">
+                <h3>Piazza Venezia</h3>
+                <a href="piazza-venezia.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+            <div class="card">
+                <img src="gambar/images (1).jpg">
+                <h3>Villa Borghese</h3>
+                <a href="villa-borghese.html" class="btn-detail">Selengkapnya</a>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Vicky Irmansyah</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLeft.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

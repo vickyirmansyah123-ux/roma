@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roma - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hubungi-kami.css">
+    <link rel="icon" href="gambar/Colosseumremovebg-preview.png">
+</head>
+
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <ul class="nav-left">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="destinasi.html">Destinasi</a></li>
+        <li><a href="jelajahi-map.html">Jelajahi Map</a></li>
+    </ul>
+
+    <h1 class="logo-title">ROMA</h1>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-right">
+        <li><a href="budaya.html">Budaya</a></li>
+        <li><a class="active" href="hubungi-kami.html">Hubungi Kami</a></li>
+        <li><a href="sisi-roma.html">Sisi Roma</a></li>
+    </ul>
+</nav>
+
+
+
+<!-- HERO BANNER -->
+<section class="contact-hero">
+    <div class="overlay"></div>
+    <!-- <h1 class="contact-title">Hubungi kami</h1> -->
+    <p class="contact-sub">Kami ingin mendengar pendapat Anda tentang Roma.</p>
+</section>
+
+<!-- CONTACT FORM SECTION -->
+<section class="form-section">
+
+    <h2 class="form-heading">Kirimkan Pesan kepada Kami</h2>
+
+    <form class="contact-form">
+
+        <label>Nama Anda</label>
+        <input type="text" placeholder="Masukkan nama Anda" required>
+
+        <label>Alamat Email</label>
+        <input type="email" placeholder="Masukkan email Anda" required>
+
+        <label>Subjek</label>
+        <input type="text" placeholder="Topik pesan Anda">
+
+        <label>Pesan Anda</label>
+        <textarea placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+        <button type="submit" class="btn-submit">Kirim Pesan</button>
+
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Vicky Irmansyah</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLeft.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

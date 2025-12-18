@@ -1,0 +1,150 @@
+/* ===============================
+   RESET & GLOBAL (WAJIB)
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* MOBILE: kunci scroll */
+    font-family: Arial, sans-serif;
+    background: #000; /* cegah putih muncul */
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.hero-colosseum {
+    position: relative;
+    width: 100vw;
+    height: 50dvh; /* pakai dynamic viewport */
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* gambar agak naik */
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.hero-title {
+    position: relative;
+    z-index: 2;
+    color: #FFD000;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+/* ===============================
+   CONTENT CARD
+================================ */
+.desc-box {
+    width: 100vw;
+    height: 50dvh; /* GENAP 1 LAYAR */
+    background: linear-gradient(
+        to bottom,
+        #1e4c63,
+        #0a2c3d
+    );
+
+    padding: 24px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desc-title {
+    color: #FFD000;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.desc-text {
+    color: #f2f2f2;
+    font-size: 16px; /* dibesarkan */
+    line-height: 1.65;
+    opacity: 0.95;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.btn-back {
+    display: block;
+    width: 100%;
+    padding: 14px;
+
+    background: #FFD000;
+    color: #1b1b1b;
+    font-size: 16px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+
+    transition: 0.25s ease;
+}
+
+.btn-back:hover {
+    background: #ffea6a;
+}
+
+/* ===============================
+   DESKTOP MODE
+================================ */
+@media (min-width: 769px) {
+
+    html,
+    body {
+        overflow: auto; /* desktop boleh scroll */
+        background: #EFE7D9;
+    }
+
+    .hero-colosseum {
+        height: 60vh;
+    }
+
+    .desc-box {
+        height: auto;
+        padding: 40px 60px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .desc-title {
+        font-size: 26px;
+    }
+
+    .desc-text {
+        font-size: 17px;
+    }
+
+    .btn-back {
+        width: fit-content;
+        padding: 14px 32px;
+    }
+}

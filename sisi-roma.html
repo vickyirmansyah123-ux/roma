@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Roma - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sisi-roma.css">
+    <link rel="icon" href="gambar/Colosseumremovebg-preview.png">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <ul class="nav-left">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="destinasi.html">Destinasi</a></li>
+        <li><a href="jelajahi-map.html">Jelajahi Map</a></li>
+    </ul>
+
+    <h1 class="logo-title">ROMA</h1>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-right">
+        <li><a href="budaya.html">Budaya</a></li>
+        <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        <li><a class="active" href="sisi-roma.html">Sisi Roma</a></li>
+    </ul>
+
+</nav>
+
+
+
+<!-- HERO SECTION -->
+<section class="about-hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="gambar/roma-about.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1 class="hero-title">KOTA ABADI</h1>
+    </div>
+</section>
+
+<!-- STORY SECTION -->
+<section class="story-section">
+    <h2 class="section-title fade-up">Cerita Kami</h2>
+
+<p class="story-text fade-up">
+    Website Roma hadir sebagai ruang digital untuk mengenal Roma secara lebih dekat. 
+    Kota ini menyimpan sejarah panjang, arsitektur megah, dan budaya yang terus hidup hingga hari ini.
+</p>
+
+<p class="story-text fade-up">
+    Melalui peta interaktif, informasi destinasi, serta visual yang imersif, 
+    kami ingin membantu pengunjung memahami Roma dengan cara yang lebih mudah, modern, dan menyenangkan.
+</p>
+
+<p class="story-text fade-up">
+    Tujuan kami sederhana: membuat siapa pun dapat menjelajahi Roma, 
+    kapan saja dan dari mana saja, tanpa kehilangan esensi keindahannya.
+</p>
+
+</section>
+
+<!-- VISION SECTION -->
+<section class="vision-section">
+
+    <div class="vision-grid">
+        <div class="vision-card zoom-soft">
+            <h3>Melestarikan Sejarah</h3>
+            <p>Menjaga cerita-cerita Roma tetap hidup melalui pengalaman digital yang menghormati warisannya.</p>
+        </div>
+
+        <div class="vision-card zoom-soft">
+            <h3>Menginspirasi Penjelajahan</h3>
+            <p>Membangkitkan rasa ingin tahu dan membantu pengunjung menemukan keindahan tersembunyi Kota Abadi.</p>
+        </div>
+
+        <div class="vision-card zoom-soft">
+            <h3>Menyatukan Orang</h3>
+            <p>Menciptakan jembatan antara budaya, generasi, dan kisah yang membentuk dunia.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Vicky Irmansyah</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLeft.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

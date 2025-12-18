@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roma - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="budaya.css">
+    <link rel="icon" href="gambar/Colosseumremovebg-preview.png">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <ul class="nav-left">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="destinasi.html">Destinasi</a></li>
+        <li><a href="jelajahi-map.html">Jelajahi Map</a></li>
+    </ul>
+
+    <h1 class="logo-title">ROMA</h1>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-right">
+        <li><a class="active" href="budaya.html">Budaya</a></li>
+        <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        <li><a href="sisi-roma.html">Sisi Roma</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- HERO VIDEO (VERSI FINAL) -->
+<section class="hero-Budaya">
+    <video autoplay muted loop playsinline class="hero-bg-video">
+        <source src="gambar/vigan.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-Budaya-overlay"></div>
+
+    <div class="hero-Budaya-content">
+        <a href="#timeline-section" class="btn-Budaya">Budaya Roma</a>
+    </div>
+</section>
+
+<!-- TIMELINE SECTION -->
+<section id="timeline-section" class="timeline-section">
+    <h2 class="section-heading">Garis Waktu Kebudayaan Romawi</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <h3>Kekaisaran Romawi Kuno</h3>
+            <p>
+                Budaya Romawi Kuno dipenuhi tradisi kuat seperti gladiator, forum publik,
+                teater, peribadatan, dan arsitektur monumental yang menjadi dasar peradaban dunia barat.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <h3>Roma Renaisans</h3>
+            <p>
+                Masa kebangkitan seni melalui karya Michelangelo, Caravaggio, Raphael, dan Bernini.
+                Gereja serta istana megah dibangun dan menjadi pusat seni Eropa.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <h3>Gaya Hidup Romawi Modern</h3>
+            <p>
+                Roma kini memadukan gaya hidup modern: kuliner, musik, fashion,
+                dan kehidupan piazza yang penuh energi namun tetap menghormati sejarah.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CULTURAL HIGHLIGHTS -->
+<section class="highlight-section">
+    <h2 class="section-heading">Sorotan Budaya</h2>
+
+    <div class="highlight-grid">
+
+        <div class="highlight-card">
+            <img src="gambar/premium_photo-1723780917550-eccbe71fad8d.avif">
+            <h3>Gastronomi Italia</h3>
+            <p>Pasta, pizza, dan wine menjadi bagian penting dari identitas Roma modern.</p>
+        </div>
+
+        <div class="highlight-card">
+            <img src="gambar/4975e0038357b8c78380160123126c75.jpg">
+            <h3>Seni & Patung</h3>
+            <p>Karya renaissance dan patung klasik masih memenuhi museum dan jalanannya.</p>
+        </div>
+
+        <div class="highlight-card">
+            <img src="gambar/pexels-c1superstar-31571937.jpg">
+            <h3>Arsitektur</h3>
+            <p>Colosseum, Pantheon, dan Forum menjadi simbol kejayaan Romawi.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Vicky Irmansyah</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLeft.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

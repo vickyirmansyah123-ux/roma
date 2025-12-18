@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roma - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="gambar/Colosseumremovebg-preview.png">
+</head>
+
+<body>
+
+<!-- BACKGROUND AUDIO -->
+<audio id="bg-audio" src="gambar/96d9292b7ec8.mp3" autoplay loop></audio>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const audio = document.getElementById("bg-audio");
+    audio.volume = 1; 
+});
+</script>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <ul class="nav-left">
+        <li><a class="active" href="index.html">Beranda</a></li>
+        <li><a href="destinasi.html">Destinasi</a></li>
+        <li><a href="jelajahi-map.html">Jelajahi Map</a></li>
+    </ul>
+
+    <h1 class="logo-title">ROMA</h1>
+
+    <div class="hamburger" id="hamburger">
+            <span></span>
+    <span></span>
+    <span></span>
+    </div>
+
+    <ul class="nav-right">
+        <li><a href="budaya.html">Budaya</a></li>
+        <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        <li><a href="sisi-roma.html">Sisi Roma</a></li>
+    </ul>
+
+    
+</nav>
+
+<!-- HERO -->
+<section class="hero-home">
+    <img src="gambar/pexels-c1superstar-28400429.jpg" class="hero-img">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1 class="hero-main">ROMA</h1>
+        <h2 class="hero-sub">KOTA ABADI</h2>
+        <p class="hero-tag">VICKY PROJECT</p>
+        <a href="Jelajahi Map.html" class="btn-explore">Jelajahi Roma</a>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro-box">
+    <h2 class="intro-title">Selamat datang di Jantung Italia</h2>
+    <p class="intro-text">
+        Roma adalah kota abadi yang menjadi saksi sejarah peradaban dunia.
+        Setiap sudutnya menyimpan kisah legendaris, arsitektur megah, dan budaya yang tak lekang oleh waktu.
+    </p>
+</section>
+
+<!-- WHY ROME -->
+<section class="why-section">
+    <h2 class="section-title">Kenapa Roma?</h2>
+
+    <div class="why-container">
+
+        <div class="why-card">
+            <img src="gambar/pexels-curatored-7627664.jpg">
+            <h3>Sejarah Abadi</h3>
+            <p>Kota dengan lebih dari 2.000 tahun peradaban yang membentuk dunia modern.</p>
+        </div>
+
+        <div class="why-card">
+            <img src="gambar/5406e75b5296f57b195c8c3ccd92b365.jpg">
+            <h3>Seni Kelas Dunia</h3>
+            <p>Rumah bagi seniman legendaris dan karya tak ternilai sepanjang masa.</p>
+        </div>
+
+        <div class="why-card">
+            <img src="gambar/pexels-renestrgar-10406184.jpg">
+            <h3>Masakan Italia</h3>
+            <p>Nikmati kuliner klasik Italia dari pasta, pizza, hingga gelato autentik.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 Vicky Irmansyah</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLeft = document.querySelector(".nav-left");
+const navRight = document.querySelector(".nav-right");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLeft.classList.toggle("active");
+    navRight.classList.toggle("active");
+});
+</script>
+
+
+</body>
+</html>
